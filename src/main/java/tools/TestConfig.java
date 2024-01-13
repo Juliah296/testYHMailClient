@@ -7,12 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import static jdk.internal.util.StaticProperty.userDir;
 
 public class TestConfig {
 
     private static final String pathToLocalProperties = "src/main/resources/local-profile.properties";
-    private static final boolean isLocalRun = new File(userDir() + pathToLocalProperties).exists();
+    private static final boolean isLocalRun = new File(System.getProperty("user.dir") + pathToLocalProperties).exists();
     private static final File localProfilePropertiesFile = new File(pathToLocalProperties);
     private static final File remoteProfilePropertiesFile = new File("src/main/resources/remote-profile.properties");
     private static final Properties properties = new Properties();
