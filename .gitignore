@@ -42,3 +42,4 @@ bin/
 /src/main/java/tests/ExerciseTests.java
 /src/main/resources/local-profile.properties
 /src/main/resources/remote-profile.properties
+/src/main/java/tests/LocalTests.java

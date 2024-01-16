@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pages.InboxPage;
 import pages.MessagePage;
+import scenarios.AuthScenarios;
 
 import java.util.Arrays;
 import java.util.List;
@@ -17,7 +18,7 @@ public class MessageListTests extends BaseTests {
     @Override
     public void setUp() {
         super.setUp();
-        //  new AuthScenarios().loginUser();
+        new AuthScenarios().loginUser();
     }
 
     @Test
